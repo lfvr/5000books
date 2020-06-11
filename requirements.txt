@@ -1,4 +1,6 @@
 Flask
 Flask-Session
+Functools
 psycopg2-binary
 SQLAlchemy
+Werkzeug
