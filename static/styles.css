@@ -1,0 +1,120 @@
+nav .navbar-brand {
+  /* size for brand */
+  font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue {
+  color: #537fbe;
+}
+
+nav .navbar-brand .pink {
+  color: palevioletred;
+}
+
+nav .navbar-brand .yellow {
+  color: palegoldenrod;
+}
+
+nav .navbar-brand .green {
+  color: mediumaquamarine;
+}
+
+main .form-control {
+  /* center form controls */
+  display: inline-block;
+  /* override Bootstrap's 100% width for form controls */
+  width: auto;
+}
+
+main {
+  /* scroll horizontally as needed */
+  overflow-x: auto;
+  /* center contents */
+  text-align: center;
+}
+
+main img {
+  /* constrain images on small screens */
+  max-width: 100%;
+}
+
+#book-title {
+  color: palevioletred;
+  font-family: "Oxygen", sans-serif;
+}
+
+form {
+  display: inline-block;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #537fbe;
+}
+
+input {
+  display: block;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  margin: 1em;
+  width: 11em;
+}
+
+input[type=radio] {
+  display: inline;
+}
+
+input[type=search], input[type=text], input[type=password] {
+  width: 25em;
+}
+
+input[type=submit] {
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  margin: auto;
+  width: 25em;
+}
+
+textarea {
+  width: 25em;
+}
+
+#synopsis {
+  text-align: justify;
+}
+
+table {
+  border-spacing: 1em .5em;
+  margin: auto;
+  padding: 0 2em 1em 0;
+}
+
+td {
+  color: palevioletred;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr a {
+  color: palevioletred;
+}
+
+th {
+  background-color: mediumaquamarine;
+  color: white;
+  font-family: "Oxygen", sans-serif;
+  width: 8em;
+}
+
+.company {
+  width: 25em;
+}
+
+.total {
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

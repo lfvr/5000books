@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<form action="/" method="post" id="search-bar">
+    <input name="search" type="search" placeholder="Search by title, author or ISBN" required>
+    <input name="submit" type="submit" value="Search">
+</form>   
+
+{% endblock %}

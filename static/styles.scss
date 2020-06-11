@@ -1,0 +1,137 @@
+$headings-font-family: 'Oxygen', sans-serif;
+$body-font-family:  'Source Sans Pro', Helvetica, Arial, sans-serif;
+$blue: #537fbe;
+$pink: palevioletred;
+$yellow: palegoldenrod;
+$green: mediumaquamarine;
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: $blue;
+}
+nav .navbar-brand .pink
+{
+    color: $pink;
+}
+nav .navbar-brand .yellow
+{
+    color: $yellow;
+}
+nav .navbar-brand .green
+{
+    color: $green;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+#book-title {
+    color: palevioletred;
+    font-family: $headings-font-family;
+}
+
+form {
+    display: inline-block;
+    margin: auto;
+}
+
+h2, h3 {
+    color: $blue;
+}
+
+input {
+    display: block;
+    font-family: $body-font-family;
+    margin: 1em;
+    width: 11em;
+}
+    
+input[type=radio] {
+    display: inline;
+}
+
+input[type=search], input[type=text], input[type=password] {
+    width: 25em;
+}
+
+input[type=submit] {
+    background-color: $pink;
+    border: none;
+    color: white;
+    margin: auto;
+    width: 25em;
+}
+
+textarea {
+    width: 25em;
+}
+
+#synopsis {
+    text-align: justify;
+}
+
+table {
+    border-spacing: 1em .5em;
+    margin: auto;
+    padding: 0 2em 1em 0;
+}
+
+td {
+    color: $pink;
+    font-family: $body-font-family;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr {
+    a 
+    { 
+       color: $pink; 
+    }
+}
+
+th {
+  background-color: $green;
+  color: white;
+  font-family: $headings-font-family;
+  width: 8em;
+}
+
+.company {
+    width: 25em;
+}
+
+.total {
+    font-weight: bold;
+}
+

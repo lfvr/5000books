@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ info["title"] }}
+{% endblock %}
+
+{% block main %}
+<img src={{ img }} alt="Book cover">
+<h1 id="book-title">{{ info["title"] }}</h1>
+<br>
+<h2 id="author">By {{ info["author"] }}</h2>
+<br>
+<p id="synopsis">{{ synopsis }}</p>
+<br>
+<br>
+<p>Publication Year: {{ info["year"] }}
+<br>
+ISBN Number: {{ info["isbn"] }}
+<br>
+Average Goodreads rating: {{ rating }} (based on {{ total }} reviews)
+<br>
+<br>
+<h3>Reviews</h3>
+
+{% if reviews != [] %}
+    {% for review in reviews %}
+        {% for i in range(0, review["rating"]) %}
+        🌟
+        {% endfor %}
+        {{ review["text"] }}
+        <br>
+    {% endfor %}
+{% else %}
+    No reviews yet!</p>
+{% endif %}
+<br>
+
+<h3>Leave a review!</h3>
+<form action="{{ url_for('submit_review', isbn=info['isbn']) }}" method="POST">
+    <div class="form-check-inline">
+        <label><input type="radio" value="1" name="review-rating" required>🌟</label>
+        <label><input type="radio" value="2" name="review-rating">🌟🌟</label>
+        <label><input type="radio" value="3" name="review-rating">🌟🌟🌟</label>
+        <label><input type="radio" value="4" name="review-rating">🌟🌟🌟🌟</label>
+        <label><input type="radio" value="5" name="review-rating">🌟🌟🌟🌟🌟</label>
+    </div>
+    <br>
+    <textarea name="review-text" rows="4" cols="50" required></textarea>
+    <br>
+    <input type="submit" value="Submit review" name="submit">
+</form>
+
+{% endblock %}
