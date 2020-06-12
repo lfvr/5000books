@@ -1,24 +1,15 @@
-# Project 1
+5000 Books 
 
-Web Programming with Python and JavaScript
+A book review website for 5000 books, which pulls information from Goodreads and Google Books APIs. It also allows registered users to submit reviews to the site, which are displayed in full on each book page. 
 
-Uses the following packages:
-os
-requests
-
-flask 
-flask_session
-functools 
-sqlalchemy 
-sqlalchemy.orm 
-werkzeug.security 
-
-Homepage defaults to login, option to register given on navbar (top right)
-
-Once logged in, homepage (accessible by clicking logo in top left of navbar) is a search bar. 
-
-Results page lists all matches, book details can be accessed by clicking on the title.
-
-On the book details page, the required information is displayed from the Goodreads API. It also utilises the Google Books API to access the synopsis and cover image.
-
-A rating and text review are required to submit a review, which is done on the book details page. 
+The API for this site is accessible at /api/<isbn>, which provides a JSON repsonse in the following format:
+  {
+    "title": "Book Title",
+    "author": "Book Author",
+    "year": 2020,
+    "isbn": "1234567890",
+    "review_count": 28,
+    "average_score": 5.0
+}
+  
+ Where review_count is the number of reviews for the book on the 5000 books website, and average_score is the average of those reviews.
