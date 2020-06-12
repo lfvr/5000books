@@ -1,4 +1,4 @@
-5000 Books 
+**5000 Books**
 
 A book review website for 5000 books, which pulls information from Goodreads and Google Books APIs. It also allows registered users to submit reviews to the site, which are displayed in full on each book page. 
 
