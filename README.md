@@ -2,7 +2,7 @@
 
 A book review website for 5000 books, which pulls information from Goodreads and Google Books APIs. It also allows registered users to submit reviews to the site, which are displayed in full on each book page. 
 
-The API for this site is accessible at /api/<isbn>, which provides a JSON repsonse in the following format:
+The API for this site is accessible at /api/\<isbn>, which provides a JSON repsonse in the following format:
   {
     "title": "Book Title",
     "author": "Book Author",
